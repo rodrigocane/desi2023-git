@@ -103,27 +103,39 @@
             animation: spin 4s linear infinite; /* Rotação constante */
             margin: 20px 0; /* Espaçamento em cima e embaixo */
         }
+        .hourglass img {
+            height: 150px;
+            width: 120px;
+            border-radius: 40px;
+            border: solid #022750;            
+        }        
 
         /* Keyframes para a animação de rotação */
-        
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>Nome: <span class="highlight">Luan Santos</span></h1>
-        <div class="hourglass"><img src="luan.png" alt="Um cara bem alto" /></div> <!-- Ampulheta girando -->
-        <p>📌 <span class="highlight">Estado civil:</span> Solteiro</p>
-        <p>🎓 <span class="highlight">Escolaridade:</span> Técnico em Administração e ensino completo</p>
-        <p>💼 <span class="highlight">Emprego atual:</span> Auxiliar de Materiais (Angeloni)</p>
+        <h1>Nome: <span class="highlight">Augusto Krüger</span></h1>
+        <div class="hourglass"><img src="eu.jpg" alt="Um bonitão cabeludo" /></div> <!-- Ampulheta girando -->
+        <p>📌 <span class="highlight">Estado civil:</span> Solteiro </p>
+        <p>🎓 <span class="highlight">Escolaridade:</span> Quase formado em Desenvolvimento de sistemas</p>
+        <p>💼 <span class="highlight">Emprego atual:</span>EletroMecanico Trepador bom</p>
         
         <h2>Experiência Profissional</h2>
         <ul>
-            <li>Recepcionista de Hotel (Panificadora da Vila 1)</li>
-            <li>Auxiliar de Materiais (Angeloni)</li>
+            <li>6 anos de faz tudo de mercados atacado</li>
         </ul>
 
-        <p class="quote">"Prefiro acreditar que nossos piores momentos não nos definem."</p>
+        <p class="quote">"dificil não gostar, impossivel não odiar"</p>
     </div>
 
 </body>
