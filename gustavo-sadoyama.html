@@ -39,12 +39,12 @@
 
         .highlight {
             font-weight: bold;
-            color: #bc35f1; /* Cor de destaque */
+            color: #007bff; /* Cor de destaque */
             transition: color 0.3s ease, transform 0.3s ease; /* Adicionando transição */
         }
 
         .highlight:hover {
-            color: #bc35f1; /* Cor ao passar o mouse */
+            color: #0056b3; /* Cor ao passar o mouse */
             transform: scale(1.1); /* Aumenta o tamanho levemente */
         }
 
@@ -58,7 +58,7 @@
             margin-top: 20px;
             font-size: 1.5em;
             color: #343a40;
-            border-bottom: 2px solid #bc35f1; /* Linha de destaque */
+            border-bottom: 2px solid #007bff; /* Linha de destaque */
             padding-bottom: 10px;
         }
 
@@ -103,24 +103,33 @@
             animation: spin 4s linear infinite; /* Rotação constante */
             margin: 20px 0; /* Espaçamento em cima e embaixo */
         }
+
+        /* Keyframes para a animação de rotação */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>Nome: <span class="highlight">Vitoria Passos</span></h1>
-        <div class="hourglass"><img src="pato.gif" alt="Um parto daora" /></div> 
-        <p>📌 <span class="highlight">Estado civil:</span> Solteira</p>
-        <p>🎓 <span class="highlight">Escolaridade:</span> Ensino Superior Cursando</p>
-        <p>💼 <span class="highlight">Emprego atual:</span> Arte Finalista - Gráfica Nacional</p>
+        <h1>Nome: <span class="highlight">Gustavo Yasuyuki Sadoyama</span></h1>
+        <div class="hourglass"><img src="eu.jpg" alt="Sadoyama" /></div> <!-- Ampulheta girando -->
+        <p>📌 <span class="highlight">Estado civil:</span> Solteiro</p>
+        <p>🎓 <span class="highlight">Escolaridade:</span> Ensino Médio Completo</p>
+        <p>💼 <span class="highlight">Emprego atual:</span> Auxiliar Administrativo </p>
         
-        <h2 style="margin-top: 15px;">Experiência Profissional</h2>
-        <ul style="list-style: none; padding: 0; text-align: left; margin-top: 10px;">
-            <li> Designer de Vitrine (2021-2022)</li>
-            <li> Arte Finalista (2024-Atual)</li>
+        <h2>Experiência Profissional</h2>
+        <ul>
+            <li>Auxiliar Administrativo</li>
         </ul>
 
-        <p class="quote">"É isso ai". Passos, Vitória. 2024</p>
+        <p class="quote">"VAI CORINTHIANS CARALHOO"</p>
     </div>
 
 </body>
