@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profissional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e9ecef;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #007bff; /* Cor de destaque */
+            transition: color 0.3s ease, transform 0.3s ease; /* Adicionando transição */
+        }
+
+        .highlight:hover {
+            color: #0056b3; /* Cor ao passar o mouse */
+            transform: scale(1.1); /* Aumenta o tamanho levemente */
+        }
+
+        p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #495057;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #343a40;
+            border-bottom: 2px solid #007bff; /* Linha de destaque */
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        li {
+            margin: 8px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li:before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: #007bff; /* Cor do ícone */
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            color: #6c757d;
+            border-left: 4px solid #007bff; /* Linha à esquerda da citação */
+            padding-left: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Efeitos de hover nos itens */
+        li:hover {
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        /* Animação da ampulheta */
+        .hourglass {
+            font-size: 50px; /* Tamanho do caractere */
+            animation: spin 4s linear infinite; /* Rotação constante */
+            margin: 20px 0; /* Espaçamento em cima e embaixo */
+        }
+
+        /* Keyframes para a animação de rotação */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Nome: <span class="highlight">Caio Cidral Ramos</span></h1>
+        <div class="hourglass">⌛</div> <!-- Ampulheta girando -->
+        <p>📌 <span class="highlight">Estado civil:</span> Separado (ou divorciado, sei lá)</p>
+        <p>🎓 <span class="highlight">Escolaridade:</span> Pós-graduação completa (talvez)</p>
+        <p>💼 <span class="highlight">Emprego atual:</span> DEV SR MASTER OF PUPPETS PICA DAS GALAXIA do Front-End na BRCondoms</p>
+        
+        <h2>Experiência Profissional</h2>
+        <ul>
+            <li>DEV SR MASTER OF PUPPETS PICA DAS GALAXIA do Front-End na BRCondoms (2000 e alguma coisa até o presente)</li>
+        </ul>
+
+        <p class="quote">"Se meus alunos não fizerem páginas elegantes e responsivas cometerei Seppuku"</p>
+    </div>
+
+</body>
+</html>
