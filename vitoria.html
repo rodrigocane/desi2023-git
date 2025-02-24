@@ -1,14 +1,16 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Profissional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         body {
@@ -16,37 +18,90 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #e9ecef;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             width: 90%;
+            max-width: 600px;
+            text-align: center;
         }
 
         h1 {
-            font-size: 1.8em;
-            color: #333;
+            font-size: 2em;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #bc35f1; /* Cor de destaque */
+            transition: color 0.3s ease, transform 0.3s ease; /* Adicionando transição */
+        }
+
+        .highlight:hover {
+            color: #bc35f1; /* Cor ao passar o mouse */
+            transform: scale(1.1); /* Aumenta o tamanho levemente */
         }
 
         p {
             font-size: 1em;
             margin: 10px 0;
-            color: #666;
+            color: #495057;
         }
 
-        .highlight {
-            font-weight: bold;
-            color: #222;
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #343a40;
+            border-bottom: 2px solid #bc35f1; /* Linha de destaque */
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        li {
+            margin: 8px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li:before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: #007bff; /* Cor do ícone */
         }
 
         .quote {
             font-style: italic;
-            margin-top: 15px;
-            color: #444;
+            margin-top: 20px;
+            color: #6c757d;
+            border-left: 4px solid #007bff; /* Linha à esquerda da citação */
+            padding-left: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Efeitos de hover nos itens */
+        li:hover {
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        /* Animação da ampulheta */
+        .hourglass {
+            font-size: 50px; /* Tamanho do caractere */
+            animation: spin 4s linear infinite; /* Rotação constante */
+            margin: 20px 0; /* Espaçamento em cima e embaixo */
         }
     </style>
 </head>
@@ -54,14 +109,15 @@
 
     <div class="card">
         <h1>Nome: <span class="highlight">Vitoria Passos</span></h1>
+        <div class="hourglass"><img src="pato.gif" alt="Um parto daora" /></div> 
         <p>📌 <span class="highlight">Estado civil:</span> Solteira</p>
-        <p>🎓 <span class="highlight">Escolaridade:</span> Ensino Superior Cursando </p>
+        <p>🎓 <span class="highlight">Escolaridade:</span> Ensino Superior Cursando</p>
         <p>💼 <span class="highlight">Emprego atual:</span> Arte Finalista - Gráfica Nacional</p>
         
         <h2 style="margin-top: 15px;">Experiência Profissional</h2>
         <ul style="list-style: none; padding: 0; text-align: left; margin-top: 10px;">
-            <li>⚡ Designer de Vitrine (2021-2022)</li>
-            <li>⚡ Arte Finalista (2024-Atual)</li>
+            <li> Designer de Vitrine (2021-2022)</li>
+            <li> Arte Finalista (2024-Atual)</li>
         </ul>
 
         <p class="quote">"É isso ai". Passos, Vitória. 2024</p>
